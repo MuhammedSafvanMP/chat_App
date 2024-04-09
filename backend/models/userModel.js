@@ -18,12 +18,12 @@ const userModel = new mongoose.Schema({
         type: String,
         default: ""
     },
-    genter: {
+    gender: {
         type: String,
-        enum: ["male", "female", "gay"],
+        enum: ["male", "female"],
         required: true
     }
 
-}, {timestamps: ture});
+}, {timestamps: true});
 
 module.exports = mongoose.model("User", userModel)
